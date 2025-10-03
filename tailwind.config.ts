@@ -39,7 +39,8 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#9B4D96",
+        primaryBlue: "#2c5282",
+        secondaryBlue: "#4299e1",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

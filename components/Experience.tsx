@@ -6,8 +6,8 @@ const Experience = (): JSX.Element => (
   <section id="experience" className="sm:py-20 w-full">
     <h3 className="title">
       My{' '}
-      <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
-        experience.
+          <span className="bg-gradient-to-r from-primaryBlue to-secondaryBlue bg-clip-text text-transparent">
+            experience.
       </span>
     </h3>
 
@@ -20,7 +20,7 @@ const Experience = (): JSX.Element => (
               <div className="flex justify-between"><div>
                 <h3 className="text-justify text-lg lg:text-3xl font-extrabold">{company}</h3>
                 <p className="text-xl md:text-2xl font-bold mt-3">
-                  <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-primaryBlue to-secondaryBlue bg-clip-text text-transparent">
                     {title}
                   </span>
                 </p>

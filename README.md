@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <a href="https://devfolio-atzin.vercel.app/" target="_blank">
+  <a href="https://asif-uchchas-portfolio.vercel.app/" target="_blank">
     <img src="public/assets/devfolio-banner.png" alt="Devfolio Banner">
   </a>
   <br />
@@ -17,7 +17,7 @@
     </a>
   </div>
 
-  <h3 align="center">Atzin Escandia's Devfolio</h3>
+  <h3 align="center">Asif Uddin Ahmed's Devfolio</h3>
   <p align="center">A super easy, simple, and neon purple (pretty me) ready to create your developer portfolio. Because who has time for complicated setups?</p>
 </div>
 
@@ -73,8 +73,8 @@ Before you get started, make sure you have:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/atzinescandia/atzin-escandia-devfolio.git
-cd atzin-escandia-devfolio
+git clone https://github.com/Asif-Uchchas/devfolio.git
+cd devfolio
 ```
 
 ### Install Dependencies
@@ -99,7 +99,7 @@ Now, head to [http://localhost:3000](http://localhost:3000) in your browser and 
 
 Looking for some inspo? Check out these amazing portfolios made using this template!
 
--   [Atzin Escandia Portfolio](https://atzinescandia.dev) - My personal site, where I show off my journey as a web dev and showcase my projects.
+-   [Asif Uddin Ahmed Portfolio](https://asif-uchchas-portfolio.vercel.app/) - My personal site, where I show off my journey as a web dev and showcase my projects.
 -   [The Plum Up Purple Neon](https://vscodethemes.com/e/atzinescandia.theplumup/theplumup) - A collection of portfolios by talented devs around the globe.
 
 ## 📝 More Resources

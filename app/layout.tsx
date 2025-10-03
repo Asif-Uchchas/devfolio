@@ -25,19 +25,19 @@ export default function RootLayout({
 // Change this data with your own 🤭
 export const metadata: Metadata = {
   title: {
-    default: 'Atzin Escandia ✷ Portfolio',
-    template: '%s - Atzin Escandia',
+    default: 'Asif Uddin Ahmed ✷ Portfolio',
+    template: '%s - Asif Uddin Ahmed',
   },
   description:
-    'A customizable portfolio template for frontend developers, created by Atzin Escandia. Showcase your skills, projects, and experience with a clean and modern design.',
+    'A customizable portfolio template for frontend developers, created by Asif Uddin Ahmed. Showcase your skills, projects, and experience with a clean and modern design.',
   icons: {
     icon: './favicon.ico',
   },
-  applicationName: 'Frontend Portfolio Template by Atzin Escandia',
+  applicationName: 'Frontend Portfolio Template by Asif Uddin Ahmed',
   authors: [
     {
-      name: 'Atzin Escandia',
-      url: 'https://www.linkedin.com/in/atzin-escandia/',
+      name: 'Asif Uddin Ahmed',
+      url: 'https://www.linkedin.com/in/asif-uddin-ahmed/',
     },
   ],
   generator: 'Next.js',
@@ -45,6 +45,6 @@ export const metadata: Metadata = {
   themeColor: '#120012',
   colorScheme: 'dark',
   viewport: 'width=device-width, initial-scale=1',
-  creator: 'Atzin Escandia',
-  publisher: 'Atzin Escandia',
+  creator: 'Asif Uddin Ahmed',
+  publisher: 'Asif Uddin Ahmed',
 };

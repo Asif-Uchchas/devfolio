@@ -17,7 +17,7 @@ const Footer = () => {
             ✷ Link to the  <a
               className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
               target="_blank"
-              href="https://github.com/atzin-escandia/devfolio"
+              href="https://github.com/Asif-Uchchas/devfolio"
             >
               github
             </a> repository ✷
@@ -28,9 +28,9 @@ const Footer = () => {
           Crafted with ❤ by  <a
             className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
             target="_blank"
-            href="https://atzinescandia.dev"
+            href="https://asif-uchchas-portfolio.vercel.app/"
           >
-            Atzin Escandia.
+            Asif Uddin Ahmed.
           </a>
         </p>
       </div>

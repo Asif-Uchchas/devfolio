@@ -12,24 +12,24 @@ const Hero = () => {
         />
         <Spotlight
           className="h-[100vh] w-[50vw] top-10 left-full"
-          fill="red"
+          fill="secondaryBlue"
         />
-        <Spotlight className="left-80 top-28 h-[100vh] w-[50vw]" fill="red" />
+        <Spotlight className="left-80 top-28 h-[100vh] w-[50vw]" fill="secondaryBlue" />
       </div>
       <div className="text-center my-20 mx-auto max-w-[900px] justify-center flex flex-col ">
         <Reveal>
           <h1 className="text-center text-4xl md:text-6xl lg:text-8xl font-extrabold">
             Hey, I&apos;m {''}
-            <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
-              Atzin Escandia!
+            <span className="bg-gradient-to-r from-primaryBlue to-secondaryBlue bg-clip-text text-transparent">
+              Asif Uddin Ahmed!
             </span>
           </h1>
         </Reveal>
         <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl">
-          I&apos;m a Software Developer
+          I&apos;m a Fullstack Software Engineer
         </h2>
         <p className="max-w-[700px] mx-auto">
-          A designer, developer and fitness enthusiast who spends way too much time creating websites that look cool. If you&apos;re into tech, fitness, or just want to chat DM me - let&apos;s make your brand everyone&apos;s crush! 🍓
+          Fullstack Software Engineer with experience in ASP.NET Core, Angular, Next.js, and SQL Server, delivering secure, high-traffic, and user-friendly web applications. Eager to contribute and build robust solutions, also familiar with Python and FastAPI for development tasks.
         </p>
         <a className="mt-10 mx-auto" href="#contact">
           <Button
