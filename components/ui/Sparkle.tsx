@@ -36,13 +36,13 @@ export function Sparkle({
       >
         <SparkleBox duration={duration} rx="30%" ry="30%">
           <div
-            className="h-20 w-20 opacity-80 bg-[radial-gradient(primaryBlue_70%,transparent_80%)] "
+            className="h-20 w-20 opacity-80 bg-[radial-gradient(var(--primaryBlue) 70%, transparent 80%)]"
           />
         </SparkleBox>
       </div>
       <div
         className={cn(
-          "relative rounded-3xl flex items-center justify-center w-full h-full text-sm text-white border border-white/[0.1] bg-primaryBlue-900/[0.5] backdrop-blur-xl",
+          "relative rounded-3xl flex items-center justify-center w-full h-full text-sm text-white border border-white/[0.1] bg-[rgba(44,82,130,0.5)] backdrop-blur-xl",
           className
         )}
       >
