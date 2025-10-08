@@ -25,7 +25,7 @@ const Footer = () => {
           <small>If you vibe with it, smash that star button! ⭐</small>
         </div>
         <p className="md:text-base text-sm md:font-normal font-light mt-5 opacity-60">
-          Crafted with ❤ by  <a
+          Crafted by  <a
             className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
             target="_blank"
             href="https://asif-uchchas-portfolio.vercel.app/"
