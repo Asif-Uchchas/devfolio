@@ -1,4 +1,6 @@
-import { skills } from "@/data";
+"use client";
+
+import { projectGradients } from "@/data";
 import { cn } from "@/lib/utils";
 
 interface BentoGridProps {
@@ -24,8 +26,9 @@ interface BentoGridItemProps {
   description?: string | React.ReactNode;
   link?: string;
   github?: string;
-  img?: string;
+  gradient?: number;
   titleClassName?: string;
+  techs?: string[];
 }
 
 
@@ -36,25 +39,25 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   description,
   link,
   github,
-  img,
+  gradient = 0,
   titleClassName,
+  techs = [],
 }) => (
   <div
     className={cn(
-      "row-span-1 relative overflow-hidden rounded-3xl border border-white/10 group/bento hover:shadow-xl transition duration-200 flex flex-col space-y-4",
+      "row-span-1 relative overflow-hidden rounded-3xl border border-white/10 group/bento hover:shadow-xl hover:shadow-violet-500/10 transition-all duration-500 flex flex-col space-y-4 hover:border-violet-500/30 hover:scale-[1.02]",
       className
     )}
   >
     <div className={cn(id === 6 && "flex justify-center", "h-full")}>
-      {img && (
-        <div className="w-full h-full absolute">
-          <img
-            src={img}
-            alt={`Image for ${title}`}
-            className="object-cover object-center opacity-20 w-full h-full"
-          />
-        </div>
-      )}
+      {/* Gradient Background */}
+      <div className={cn(
+        "absolute inset-0 bg-gradient-to-br opacity-60 transition-opacity duration-500 group-hover/bento:opacity-90",
+        projectGradients[gradient % projectGradients.length]
+      )} />
+
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.3)_1px,transparent_0)] bg-[size:24px_24px]" />
 
       <div className={cn(id === 5 && "w-full opacity-80", "absolute right-0 -bottom-5")} />
 
@@ -104,12 +107,12 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
             </p>
 
             <div className="flex flex-wrap gap-2 py-1">
-              {skills.map((skill) => (
+              {techs.map((tech) => (
                 <div
-                  key={skill}
-                  className="bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-white/20 transition duration-200 ease-in-out"
+                  key={tech}
+                  className="bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg hover:bg-white/20 transition duration-200 ease-in-out border border-white/5"
                 >
-                  {skill}
+                  {tech}
                 </div>
               ))}
             </div>

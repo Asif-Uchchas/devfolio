@@ -39,8 +39,8 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        primaryBlue: "#2c5282",
-        secondaryBlue: "#4299e1",
+        primaryBlue: "#6d28d9",
+        secondaryBlue: "#06b6d4",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -69,6 +69,27 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "glow-pulse": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px rgba(109, 40, 217, 0.3), 0 0 60px rgba(6, 182, 212, 0.1)",
+          },
+          "50%": {
+            boxShadow: "0 0 30px rgba(109, 40, 217, 0.5), 0 0 80px rgba(6, 182, 212, 0.2)",
+          },
+        },
+        "gradient-shift": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+        "typing-cursor": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -76,6 +97,10 @@ const config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        float: "float 6s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "typing-cursor": "typing-cursor 1s ease-in-out infinite",
       },
     },
   },

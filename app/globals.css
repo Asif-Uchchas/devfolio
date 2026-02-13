@@ -13,11 +13,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 350 15% 10%;
 
-    --primary: 350 65% 40%;
+    --primary: 263 70% 50%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 350 60% 95%;
-    --secondary-foreground: 350 65% 40%;
+    --secondary: 187 94% 43%;
+    --secondary-foreground: 263 70% 50%;
   }
 }
 
@@ -40,7 +40,45 @@
   h3 {
     @apply text-4xl sm:text-5xl md:text-6xl text-center font-extrabold;
   }
-  p{
-     @apply text-sm sm:text-lg;
+  p {
+    @apply text-sm sm:text-lg;
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.3),
+      0 0 60px rgba(6, 182, 212, 0.1);
+  }
+
+  .glow-ring-hover:hover {
+    box-shadow: 0 0 30px rgba(109, 40, 217, 0.5),
+      0 0 80px rgba(6, 182, 212, 0.25);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent;
+  }
+
+  .animated-gradient-bg {
+    background: linear-gradient(
+      -45deg,
+      rgba(109, 40, 217, 0.15),
+      rgba(6, 182, 212, 0.1),
+      rgba(168, 85, 247, 0.12),
+      rgba(14, 165, 233, 0.08)
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
