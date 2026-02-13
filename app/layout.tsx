@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "400", "700", '900'] });
+const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "400", "700", "900"] });
 
 export default function RootLayout({
   children,
@@ -14,7 +14,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.svg" sizes="any" />
       </head>
-      <body className={`${poppins.className}`}>
+      <body className={`${inter.className}`}>
         {children}
       </body>
     </html>
@@ -25,15 +25,15 @@ export default function RootLayout({
 // Change this data with your own 🤭
 export const metadata: Metadata = {
   title: {
-    default: 'Asif Uddin Ahmed ✷ Portfolio',
+    default: 'Asif Uddin Ahmed ✷ Software Engineer',
     template: '%s - Asif Uddin Ahmed',
   },
   description:
-    'A customizable portfolio template for frontend developers, created by Asif Uddin Ahmed. Showcase your skills, projects, and experience with a clean and modern design.',
+    'Portfolio of Asif Uddin Ahmed — Junior Software Engineer at Trust Bank PLC. Building secure banking solutions with ASP.NET Core, Angular, Next.js, and SQL Server.',
   icons: {
     icon: './favicon.ico',
   },
-  applicationName: 'Frontend Portfolio Template by Asif Uddin Ahmed',
+  applicationName: 'Asif Uddin Ahmed — Portfolio',
   authors: [
     {
       name: 'Asif Uddin Ahmed',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   generator: 'Next.js',
   referrer: 'origin',
-  themeColor: '#120012',
+  themeColor: '#0a0015',
   colorScheme: 'dark',
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Asif Uddin Ahmed',
