@@ -506,21 +506,74 @@ export const workExperience = [
     },
 ];
 
-export const socialMedia = [
+export const contact = {
+    email: "asifuchchas123@gmail.com",
+    /** E.164 without the plus, as wa.me requires. Local form: 01999398675 */
+    whatsappNumber: "8801999398675",
+    whatsappDisplay: "+880 1999 398675",
+    telegramHandle: "Asif_Uchchas",
+};
+
+export interface SocialLink {
+    id: number;
+    name: string;
+    img: string;
+    link: string;
+    /** Shown in the compact floating bar as well as the full lists. */
+    primary?: boolean;
+}
+
+export const socialMedia: SocialLink[] = [
     {
         id: 1,
+        name: "GitHub",
         img: "/assets/git.svg",
         link: "https://github.com/Asif-Uchchas",
+        primary: true,
     },
     {
         id: 2,
+        name: "LinkedIn",
         img: "/assets/linkedin.svg",
         link: "https://www.linkedin.com/in/asif-uddin-ahmed/",
+        primary: true,
     },
     {
         id: 3,
+        name: "Portfolio",
         img: "/assets/web.svg",
         link: "https://asif-uchchas-portfolio.vercel.app/",
+        primary: true,
+    },
+    {
+        id: 4,
+        name: "WhatsApp",
+        img: "/assets/whatsapp.svg",
+        link: `https://wa.me/${contact.whatsappNumber}`,
+    },
+    {
+        id: 5,
+        name: "Telegram",
+        img: "/assets/telegram.svg",
+        link: `https://t.me/${contact.telegramHandle}`,
+    },
+    {
+        id: 6,
+        name: "Facebook",
+        img: "/assets/facebook.svg",
+        link: "https://www.facebook.com/asif.uchchas/",
+    },
+    {
+        id: 7,
+        name: "Instagram",
+        img: "/assets/insta.svg",
+        link: "https://www.instagram.com/asif_uchchas/",
+    },
+    {
+        id: 8,
+        name: "Threads",
+        img: "/assets/threads.svg",
+        link: "https://www.threads.com/@asif_uchchas",
     },
 ];
 
