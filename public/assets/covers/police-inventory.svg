@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="police-inventory cover art">
+  <defs>
+    <radialGradient id="g-14b8a6"><stop offset="0%" stop-color="#14b8a6" stop-opacity="0.85"/><stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-34d399"><stop offset="0%" stop-color="#34d399" stop-opacity="0.85"/><stop offset="100%" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-84cc16"><stop offset="0%" stop-color="#84cc16" stop-opacity="0.85"/><stop offset="100%" stop-color="#84cc16" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-police-inventory" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14b8a6"/><stop offset="55%" stop-color="#34d399"/><stop offset="100%" stop-color="#84cc16"/>
+    </linearGradient>
+    <pattern id="dots-police-inventory" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-14b8a6)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-84cc16)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-34d399)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-police-inventory)"/>
+  <rect x="759" y="430" width="183" height="16" rx="8" fill="#14b8a6" opacity="0.13" transform="rotate(89 759 430)"/>
+  <rect x="949" y="478" width="182" height="18" rx="8" fill="#84cc16" opacity="0.16" transform="rotate(68 949 478)"/>
+  <rect x="651" y="144" width="177" height="15" rx="8" fill="#84cc16" opacity="0.16" transform="rotate(89 651 144)"/>
+  <rect x="638" y="576" width="95" height="22" rx="8" fill="#14b8a6" opacity="0.11" transform="rotate(85 638 576)"/>
+  <rect x="440" y="547" width="81" height="16" rx="8" fill="#34d399" opacity="0.21" transform="rotate(18 440 547)"/>
+  <rect x="1011" y="108" width="196" height="20" rx="8" fill="#34d399" opacity="0.11" transform="rotate(54 1011 108)"/>
+  <rect x="582" y="519" width="181" height="18" rx="8" fill="#14b8a6" opacity="0.15" transform="rotate(50 582 519)"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-police-inventory)" opacity="0.92">IM</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

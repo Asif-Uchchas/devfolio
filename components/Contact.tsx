@@ -36,7 +36,7 @@ const Contact = () => {
         <a className="mt-8" href="mailto:asifuchchas123@gmail.com">
           <Button
             title="Let's connect"
-            icon={<img src="assets/send.svg" />}
+            icon={<img src="/assets/send.svg" />}
             position="right"
           />
         </a>

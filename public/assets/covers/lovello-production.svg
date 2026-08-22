@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="lovello-production cover art">
+  <defs>
+    <radialGradient id="g-f43f5e"><stop offset="0%" stop-color="#f43f5e" stop-opacity="0.85"/><stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-e879f9"><stop offset="0%" stop-color="#e879f9" stop-opacity="0.85"/><stop offset="100%" stop-color="#e879f9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-8b5cf6"><stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.85"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-lovello-production" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f43f5e"/><stop offset="55%" stop-color="#e879f9"/><stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="dots-lovello-production" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-f43f5e)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-8b5cf6)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-e879f9)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-lovello-production)"/>
+  <rect x="212" y="372" width="30" height="30" rx="14" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.20" transform="rotate(69 212 372)"/>
+  <rect x="187" y="354" width="31" height="31" rx="14" fill="none" stroke="#e879f9" stroke-width="2" opacity="0.20" transform="rotate(39 187 354)"/>
+  <rect x="331" y="533" width="109" height="109" rx="14" fill="none" stroke="#f43f5e" stroke-width="2" opacity="0.18" transform="rotate(44 331 533)"/>
+  <rect x="700" y="190" width="49" height="49" rx="14" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.20" transform="rotate(24 700 190)"/>
+  <rect x="607" y="550" width="104" height="104" rx="14" fill="none" stroke="#e879f9" stroke-width="2" opacity="0.17" transform="rotate(87 607 550)"/>
+  <rect x="933" y="169" width="51" height="51" rx="14" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.22" transform="rotate(27 933 169)"/>
+  <rect x="621" y="306" width="81" height="81" rx="14" fill="none" stroke="#f43f5e" stroke-width="2" opacity="0.19" transform="rotate(12 621 306)"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-lovello-production)" opacity="0.92">LV</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

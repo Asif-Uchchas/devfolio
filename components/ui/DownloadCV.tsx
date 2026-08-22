@@ -12,7 +12,7 @@ const DownloadCV: React.FC<DownloadCVProps> = ({ fileUrl, fileName }) => {
     return (
         <Button
             title="My CV"
-            icon={<img src="assets/download.svg" />
+            icon={<img src="/assets/download.svg" />
             }
             position="right"
             handleClick={() => {

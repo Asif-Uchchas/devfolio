@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="w-full sm:pt-60 pb-10 relative overflow-hidden ">
       <div className="w-full absolute left-0 top-0 min-h-96">
         <img
-          src="assets/img-footer.svg"
+          src="/assets/img-footer.svg"
           alt="grid"
           className="w-full h-full opacity-10"
         />
