@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="tourtrail cover art">
+  <defs>
+    <radialGradient id="g-7c3aed"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.85"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-d946ef"><stop offset="0%" stop-color="#d946ef" stop-opacity="0.85"/><stop offset="100%" stop-color="#d946ef" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-22d3ee"><stop offset="0%" stop-color="#22d3ee" stop-opacity="0.85"/><stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-tourtrail" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/><stop offset="55%" stop-color="#d946ef"/><stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="dots-tourtrail" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-7c3aed)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-22d3ee)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-d946ef)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-tourtrail)"/>
+  <circle cx="330" cy="508" r="35" fill="none" stroke="#7c3aed" stroke-width="2.3" opacity="0.16"/>
+  <circle cx="571" cy="234" r="52" fill="none" stroke="#22d3ee" stroke-width="4.2" opacity="0.12"/>
+  <circle cx="373" cy="303" r="51" fill="none" stroke="#22d3ee" stroke-width="2.9" opacity="0.28"/>
+  <circle cx="735" cy="456" r="45" fill="none" stroke="#7c3aed" stroke-width="3.8" opacity="0.10"/>
+  <circle cx="897" cy="180" r="24" fill="none" stroke="#7c3aed" stroke-width="3.9" opacity="0.18"/>
+  <circle cx="170" cy="495" r="14" fill="none" stroke="#d946ef" stroke-width="3.3" opacity="0.14"/>
+  <circle cx="257" cy="361" r="59" fill="none" stroke="#22d3ee" stroke-width="2.0" opacity="0.29"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-tourtrail)" opacity="0.92">TT</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

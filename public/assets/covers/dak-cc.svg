@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="dak-cc cover art">
+  <defs>
+    <radialGradient id="g-f59e0b"><stop offset="0%" stop-color="#f59e0b" stop-opacity="0.85"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-fb923c"><stop offset="0%" stop-color="#fb923c" stop-opacity="0.85"/><stop offset="100%" stop-color="#fb923c" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-ef4444"><stop offset="0%" stop-color="#ef4444" stop-opacity="0.85"/><stop offset="100%" stop-color="#ef4444" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-dak-cc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="55%" stop-color="#fb923c"/><stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <pattern id="dots-dak-cc" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-f59e0b)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-ef4444)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-fb923c)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-dak-cc)"/>
+  <polygon points="801,594 856,613 823,649" fill="#f59e0b" opacity="0.26"/>
+  <polygon points="211,295 262,313 231,346" fill="#f59e0b" opacity="0.18"/>
+  <polygon points="505,218 579,244 535,292" fill="#fb923c" opacity="0.20"/>
+  <polygon points="116,600 221,637 158,705" fill="#ef4444" opacity="0.13"/>
+  <polygon points="242,462 273,473 254,493" fill="#ef4444" opacity="0.20"/>
+  <polygon points="972,398 1046,424 1002,472" fill="#ef4444" opacity="0.23"/>
+  <polygon points="531,135 559,145 542,163" fill="#fb923c" opacity="0.18"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-dak-cc)" opacity="0.92">DC</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

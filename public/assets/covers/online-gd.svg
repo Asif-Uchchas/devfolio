@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="online-gd cover art">
+  <defs>
+    <radialGradient id="g-f97316"><stop offset="0%" stop-color="#f97316" stop-opacity="0.85"/><stop offset="100%" stop-color="#f97316" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-fb7185"><stop offset="0%" stop-color="#fb7185" stop-opacity="0.85"/><stop offset="100%" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-a855f7"><stop offset="0%" stop-color="#a855f7" stop-opacity="0.85"/><stop offset="100%" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-online-gd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/><stop offset="55%" stop-color="#fb7185"/><stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <pattern id="dots-online-gd" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-f97316)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-a855f7)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-fb7185)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-online-gd)"/>
+  <rect x="217" y="188" width="63" height="12" rx="8" fill="#a855f7" opacity="0.11" transform="rotate(20 217 188)"/>
+  <rect x="888" y="444" width="119" height="20" rx="8" fill="#a855f7" opacity="0.28" transform="rotate(67 888 444)"/>
+  <rect x="168" y="201" width="193" height="23" rx="8" fill="#a855f7" opacity="0.20" transform="rotate(51 168 201)"/>
+  <rect x="600" y="319" width="67" height="17" rx="8" fill="#f97316" opacity="0.15" transform="rotate(6 600 319)"/>
+  <rect x="819" y="619" width="65" height="10" rx="8" fill="#fb7185" opacity="0.29" transform="rotate(61 819 619)"/>
+  <rect x="634" y="129" width="184" height="15" rx="8" fill="#f97316" opacity="0.14" transform="rotate(49 634 129)"/>
+  <rect x="565" y="216" width="73" height="23" rx="8" fill="#fb7185" opacity="0.27" transform="rotate(49 565 216)"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-online-gd)" opacity="0.92">GD</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

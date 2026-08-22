@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="police-hq-cafe cover art">
+  <defs>
+    <radialGradient id="g-6366f1"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.85"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-c084fc"><stop offset="0%" stop-color="#c084fc" stop-opacity="0.85"/><stop offset="100%" stop-color="#c084fc" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-ec4899"><stop offset="0%" stop-color="#ec4899" stop-opacity="0.85"/><stop offset="100%" stop-color="#ec4899" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-police-hq-cafe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/><stop offset="55%" stop-color="#c084fc"/><stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <pattern id="dots-police-hq-cafe" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-6366f1)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-ec4899)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-c084fc)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-police-hq-cafe)"/>
+  <circle cx="131" cy="582" r="55" fill="none" stroke="#ec4899" stroke-width="2.7" opacity="0.20"/>
+  <circle cx="758" cy="251" r="53" fill="none" stroke="#c084fc" stroke-width="2.3" opacity="0.18"/>
+  <circle cx="200" cy="128" r="58" fill="none" stroke="#ec4899" stroke-width="2.5" opacity="0.10"/>
+  <circle cx="437" cy="226" r="28" fill="none" stroke="#6366f1" stroke-width="3.9" opacity="0.29"/>
+  <circle cx="348" cy="206" r="35" fill="none" stroke="#ec4899" stroke-width="3.0" opacity="0.28"/>
+  <circle cx="670" cy="334" r="50" fill="none" stroke="#6366f1" stroke-width="2.4" opacity="0.11"/>
+  <circle cx="312" cy="515" r="35" fill="none" stroke="#6366f1" stroke-width="4.3" opacity="0.11"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-police-hq-cafe)" opacity="0.92">HQ</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

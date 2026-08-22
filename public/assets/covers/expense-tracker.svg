@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="expense-tracker cover art">
+  <defs>
+    <radialGradient id="g-06b6d4"><stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85"/><stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-60a5fa"><stop offset="0%" stop-color="#60a5fa" stop-opacity="0.85"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-6366f1"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.85"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-expense-tracker" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/><stop offset="55%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="dots-expense-tracker" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-06b6d4)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-6366f1)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-60a5fa)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-expense-tracker)"/>
+  <rect x="763" y="109" width="128" height="15" rx="8" fill="#60a5fa" opacity="0.13" transform="rotate(28 763 109)"/>
+  <rect x="352" y="566" width="115" height="25" rx="8" fill="#6366f1" opacity="0.11" transform="rotate(16 352 566)"/>
+  <rect x="432" y="225" width="51" height="10" rx="8" fill="#6366f1" opacity="0.11" transform="rotate(44 432 225)"/>
+  <rect x="264" y="367" width="122" height="22" rx="8" fill="#06b6d4" opacity="0.28" transform="rotate(35 264 367)"/>
+  <rect x="982" y="165" width="154" height="11" rx="8" fill="#6366f1" opacity="0.18" transform="rotate(35 982 165)"/>
+  <rect x="271" y="543" width="146" height="24" rx="8" fill="#6366f1" opacity="0.22" transform="rotate(66 271 543)"/>
+  <rect x="779" y="213" width="197" height="14" rx="8" fill="#06b6d4" opacity="0.16" transform="rotate(66 779 213)"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-expense-tracker)" opacity="0.92">ET</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

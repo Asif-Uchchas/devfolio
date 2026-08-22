@@ -94,7 +94,7 @@ const Hero = () => {
         <a className="mt-10 mx-auto" href="#contact">
           <Button
             title="Contact me"
-            icon={<img src="assets/send.svg" />}
+            icon={<img src="/assets/send.svg" />}
             position="right"
           />
         </a>

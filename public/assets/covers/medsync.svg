@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="medsync cover art">
+  <defs>
+    <radialGradient id="g-10b981"><stop offset="0%" stop-color="#10b981" stop-opacity="0.85"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-2dd4bf"><stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.85"/><stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-3b82f6"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.85"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-medsync" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/><stop offset="55%" stop-color="#2dd4bf"/><stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <pattern id="dots-medsync" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-10b981)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-3b82f6)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-2dd4bf)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-medsync)"/>
+  <rect x="557" y="431" width="43" height="43" rx="14" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.11" transform="rotate(34 557 431)"/>
+  <rect x="832" y="166" width="115" height="115" rx="14" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.23" transform="rotate(30 832 166)"/>
+  <rect x="646" y="530" width="93" height="93" rx="14" fill="none" stroke="#10b981" stroke-width="2" opacity="0.17" transform="rotate(82 646 530)"/>
+  <rect x="784" y="274" width="57" height="57" rx="14" fill="none" stroke="#10b981" stroke-width="2" opacity="0.21" transform="rotate(23 784 274)"/>
+  <rect x="1012" y="493" width="99" height="99" rx="14" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.29" transform="rotate(85 1012 493)"/>
+  <rect x="536" y="470" width="107" height="107" rx="14" fill="none" stroke="#10b981" stroke-width="2" opacity="0.24" transform="rotate(7 536 470)"/>
+  <rect x="369" y="426" width="76" height="76" rx="14" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.17" transform="rotate(65 369 426)"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-medsync)" opacity="0.92">MS</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>

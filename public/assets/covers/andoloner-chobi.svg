@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="andoloner-chobi cover art">
+  <defs>
+    <radialGradient id="g-3b82f6"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.85"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-818cf8"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.85"/><stop offset="100%" stop-color="#818cf8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g-8b5cf6"><stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.85"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="txt-andoloner-chobi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/><stop offset="55%" stop-color="#818cf8"/><stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="dots-andoloner-chobi" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#07030f"/>
+  <circle cx="192" cy="150" r="430" fill="url(#g-3b82f6)" opacity="0.55"/>
+  <circle cx="1032" cy="195" r="380" fill="url(#g-8b5cf6)" opacity="0.45"/>
+  <circle cx="624" cy="705" r="420" fill="url(#g-818cf8)" opacity="0.4"/>
+  <rect width="1200" height="750" fill="url(#dots-andoloner-chobi)"/>
+  <polygon points="103,140 174,165 131,211" fill="#8b5cf6" opacity="0.16"/>
+  <polygon points="736,151 842,188 778,257" fill="#818cf8" opacity="0.18"/>
+  <polygon points="594,595 676,624 627,677" fill="#8b5cf6" opacity="0.21"/>
+  <polygon points="217,446 318,482 257,548" fill="#818cf8" opacity="0.26"/>
+  <polygon points="285,435 327,449 302,477" fill="#8b5cf6" opacity="0.12"/>
+  <polygon points="136,510 246,549 180,621" fill="#3b82f6" opacity="0.25"/>
+  <polygon points="570,101 623,119 591,153" fill="#3b82f6" opacity="0.26"/>
+  <text x="600" y="375" text-anchor="middle" dominant-baseline="central"
+        font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="230" font-weight="800" letter-spacing="10"
+        fill="url(#txt-andoloner-chobi)" opacity="0.92">AC</text>
+  <rect x="0.5" y="0.5" width="1199" height="749" fill="none" stroke="#ffffff" stroke-opacity="0.09" rx="26"/>
+</svg>
