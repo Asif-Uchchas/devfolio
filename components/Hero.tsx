@@ -7,7 +7,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { motion } from "framer-motion";
 
 const roles = [
-  "Junior Software Engineer",
+  "Software Engineer",
   "Fullstack Developer",
   "Problem Solver",
 ];
