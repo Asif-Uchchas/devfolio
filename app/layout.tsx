@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "400", "700", "900"] });
@@ -16,6 +18,8 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className}`}>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s - Asif Uddin Ahmed',
   },
   description:
-    'Portfolio of Asif Uddin Ahmed — Junior Software Engineer at Trust Bank PLC. Building secure banking solutions with ASP.NET Core, Angular, Next.js, and SQL Server.',
+    'Portfolio of Asif Uddin Ahmed — Software Engineer at Trust Bank PLC. Building secure banking solutions with ASP.NET Core, Angular, Next.js, and SQL Server.',
   icons: {
     icon: './favicon.ico',
   },

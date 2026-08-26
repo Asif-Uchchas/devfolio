@@ -10,6 +10,8 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.25",
     "mini-svg-data-uri": "^1.4.4",
