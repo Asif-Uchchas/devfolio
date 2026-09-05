@@ -63,7 +63,7 @@ const Hero = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 backdrop-blur-sm text-sm font-medium text-violet-300">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Currently at Trust Bank PLC
+            Currently at Trust & Pay (TAP)
           </span>
         </motion.div>
 
@@ -87,8 +87,8 @@ const Hero = () => {
         </div>
 
         <p className="max-w-[700px] mx-auto text-white/70">
-          Fullstack Software Engineer at <span className="text-violet-300 font-semibold">Trust Bank PLC</span>, building secure
-          banking solutions. Experienced with ASP.NET Core, Angular, Next.js, and SQL Server — delivering
+          Software Engineer at <span className="text-violet-300 font-semibold">Trust &amp; Pay (TAP)</span>, building secure
+          mobile financial services. Experienced with ASP.NET Core, Angular, Next.js, and SQL Server — delivering
           high-traffic, user-friendly web applications.
         </p>
         <a className="mt-10 mx-auto" href="#contact">

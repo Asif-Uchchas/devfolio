@@ -19,7 +19,7 @@ const About = () => (
         className="flex-col text-left p-3 md:p-5 lg:p-10 gap-5 min-h-full"
       >
         <p className="text-white/80">
-          Hey! I&apos;m Asif, a Fullstack Software Engineer currently building secure banking solutions at <span className="text-violet-300 font-semibold">Trust Bank PLC</span>. Previously at Opus Technology, where I delivered multiple enterprise-grade systems for the Bangladesh Police.
+          Hey! I&apos;m Asif, a Fullstack Software Engineer currently building secure mobile financial services at <span className="text-violet-300 font-semibold">Trust &amp; Pay (TAP)</span>. Previously at Opus Technology, where I delivered multiple enterprise-grade systems for the Bangladesh Police.
         </p>
         <p className="text-white/80">
           My core stack includes ASP.NET Core, Angular, Next.js, and SQL Server. I&apos;m passionate about crafting robust, scalable applications — and I&apos;m always exploring new technologies like Python and FastAPI.
