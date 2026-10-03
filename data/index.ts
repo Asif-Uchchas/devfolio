@@ -41,7 +41,7 @@ export const projectGradients = [
     "from-rose-500/30 via-fuchsia-400/20 to-violet-500/30",
 ];
 
-export type ProjectStatus = "live" | "internal" | "archived";
+export type ProjectStatus = "live" | "prototype" | "internal" | "archived";
 
 export interface Project {
     id: number;
@@ -368,13 +368,15 @@ export const projects: Project[] = [
         slug: "velora",
         title: "Velora – E-Commerce Platform",
         shortTitle: "Velora",
-        description: "An omnichannel storefront with Stripe payments, role-based admin dashboards, and revenue analytics.",
-        overview: "Velora is a production-shaped e-commerce platform: a customer storefront, a staffed admin surface, and the payment plumbing between them. It covers the parts that usually get skipped in demo builds — refunds and order state, role separation between customer, moderator, and admin, and analytics that operators actually read.",
+        description: "A Bangladesh-focused online store where orders are priced server-side and confirmed with the customer over WhatsApp or email.",
+        overview: "Velora is an online store built around confirming each order with the customer directly rather than taking a card payment. Checkout creates a pending order; the server prices every line, checks stock, and applies a delivery fee by zone, then hands the customer a prefilled WhatsApp or email message. An admin confirms the order from a dashboard that also covers products, categories, customers, analytics, and store settings.",
         highlights: [
-            "Built the storefront across product catalog, cart, and checkout.",
-            "Integrated Stripe for payment processing and webhook-driven order state.",
-            "Implemented role-based access separating customer, moderator, and admin capabilities.",
-            "Delivered admin dashboards with revenue analytics and sortable data tables over Prisma and PostgreSQL.",
+            "Built the storefront across product catalog, categories, wishlist, cart, and checkout.",
+            "Designed checkout around an admin-confirmed order: each order starts pending and moves through confirmed, processing, shipped, and delivered, with prices, stock, and delivery fees always taken from the database rather than the client.",
+            "Added zone-based delivery pricing across Bangladesh's 64 districts, billed as inside or outside Dhaka from store settings.",
+            "Generated prefilled order messages for WhatsApp and email, with server-side SMTP sending when configured, plus a per-product WhatsApp enquiry button.",
+            "Protected order placement with schema validation, Postgres-backed rate limiting that holds across serverless instances, and role-based access across admin, store manager, moderator, and customer roles.",
+            "Delivered admin tooling for orders, products, categories, customers, analytics, and store settings over Prisma and PostgreSQL.",
         ],
         cover: "/assets/covers/velora.webp",
         coverAlt: "Screenshot of the Velora storefront homepage",
@@ -388,7 +390,7 @@ export const projects: Project[] = [
         gradient: 3,
         github: "https://github.com/Asif-Uchchas/velora",
         live: "https://velorabd.vercel.app",
-        techs: ["Next.js", "TypeScript", "Prisma", "Stripe", "PostgreSQL"],
+        techs: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Zod"],
         type: "personal",
     },
     {
@@ -468,12 +470,40 @@ export const projects: Project[] = [
         role: "Solo developer",
         org: "Personal project",
         status: "live",
-        className: "lg:col-span-5 md:col-span-6",
+        className: "lg:col-span-3 md:col-span-3",
         titleClassName: "justify-center",
         gradient: 5,
         github: "https://github.com/Asif-Uchchas/expense-tracker",
         live: "https://expense-tracker-amber-zeta.vercel.app",
         techs: ["Next.js", "TypeScript", "Supabase", "React Query"],
+        type: "personal",
+    },
+    {
+        id: 16,
+        slug: "pc-remote",
+        title: "PC Remote – Phone-as-Touchpad for Windows",
+        shortTitle: "PC Remote",
+        description: "An Android app that turns a phone into a wireless touchpad, keyboard, and media remote for a Windows PC over Wi-Fi.",
+        overview: "PC Remote controls a Windows PC from an Android phone on the same network. A small Python helper runs on the PC from the system tray; a Flutter app finds it automatically, connects with a PIN, and sends mouse, keyboard, and media-key input as newline-delimited JSON over TCP. It is an early prototype, kept deliberately small and quick to set up.",
+        highlights: [
+            "Designed a compact newline-delimited JSON protocol over TCP covering mouse movement, clicks, scrolling, text entry, key combinations, and media keys.",
+            "Built zero-configuration discovery over UDP broadcast, also sending to each subnet's directed broadcast address because some phones and hotspots drop the limited one, with manual IP entry as a fallback.",
+            "Implemented a multi-touch gesture layer: one-finger move, tap to click, two-finger tap for right click, three-finger tap for middle click, two-finger scroll, and tap-then-hold to drag.",
+            "Wrote the Windows helper in Python with pynput for input injection and a system-tray icon, gating connections behind a PIN generated on first run.",
+            "Tuned for responsiveness with TCP_NODELAY and haptic feedback, with pointer and scroll speed adjustable and saved on the device.",
+        ],
+        cover: "/assets/covers/pc-remote.svg",
+        coverAlt: "PC Remote cover art",
+        coverIsScreenshot: false,
+        year: "2026",
+        role: "Solo developer",
+        org: "Personal project",
+        status: "prototype",
+        className: "lg:col-span-2 md:col-span-3",
+        titleClassName: "justify-start",
+        gradient: 8,
+        github: "https://github.com/Asif-Uchchas/pc-remote",
+        techs: ["Flutter", "Dart", "Python", "TCP/UDP"],
         type: "personal",
     },
 ];

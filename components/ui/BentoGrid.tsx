@@ -23,12 +23,14 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ className, children }) => 
 
 const statusLabels: Record<ProjectStatus, string> = {
   live: "Live",
+  prototype: "Prototype",
   internal: "Internal",
   archived: "Archived",
 };
 
 const statusStyles: Record<ProjectStatus, string> = {
   live: "bg-emerald-500/10 border-emerald-500/30 text-emerald-300",
+  prototype: "bg-amber-500/10 border-amber-500/30 text-amber-300",
   internal: "bg-white/5 border-white/15 text-white/60",
   archived: "bg-white/5 border-white/15 text-white/50",
 };
