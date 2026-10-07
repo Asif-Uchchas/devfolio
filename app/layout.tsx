@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: '%s - Asif Uddin Ahmed',
   },
   description:
-    'Portfolio of Asif Uddin Ahmed — Software Engineer at Trust Bank PLC. Building secure banking solutions with ASP.NET Core, Angular, Next.js, and SQL Server.',
+    'Portfolio of Asif Uddin Ahmed — Software Engineer at Trust & Pay (TAP). Building secure mobile financial services with ASP.NET Core, Angular, Next.js, and SQL Server.',
   icons: {
     icon: './favicon.ico',
   },
