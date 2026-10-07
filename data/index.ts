@@ -512,14 +512,30 @@ export const projects: Project[] = [
 export const getProjectBySlug = (slug: string) =>
     projects.find((project) => project.slug === slug);
 
+export interface GigPackage {
+    name: string;
+    /** USD, as listed on the platform. */
+    price: number;
+    deliveryDays: number;
+    revisions: number;
+    summary: string;
+    includes: string[];
+}
+
 export interface Gig {
     id: number;
     platform: string;
     title: string;
-    headline: string;
-    summary: string;
+    tagline: string;
+    stack: string;
     /** Canonical gig URL, without share-link tracking parameters. */
     url: string;
+    deliverables: string[];
+    idealFor: string[];
+    whyMe: string[];
+    packages: GigPackage[];
+    packageNote: string;
+    faqs: { question: string; answer: string }[];
     /** Slugs of projects that show the kind of work this gig covers. */
     relatedProjects: string[];
 }
@@ -529,9 +545,79 @@ export const gigs: Gig[] = [
         id: 1,
         platform: "Fiverr",
         title: "Turn your app idea into a working system with database",
-        headline: "Got an app idea? Let's turn it into a working system.",
-        summary: "Tell me what you want to build and I'll take it from idea to a working, database-backed application — the same end-to-end work as the systems below.",
+        tagline: "I turn your idea into a working web system: a secure database, user logins, an admin panel and a fast, mobile-friendly interface, ready to launch.",
+        stack: "ASP.NET Core, SQL Server, Next.js and TypeScript",
         url: "https://www.fiverr.com/asifuddin_ahmed/turn-your-app-idea-into-a-working-system-with-database",
+        deliverables: [
+            "Custom web app built from scratch, no templates",
+            "Database design and setup",
+            "User login and roles",
+            "Admin panel to manage your data",
+            "Mobile responsive pages",
+            "Contact form and speed optimization",
+            "Clean, documented source code",
+        ],
+        idealFor: [
+            "Startup MVPs",
+            "Booking and order systems",
+            "Dashboards",
+            "Internal tools",
+            "Wallet and payment apps",
+        ],
+        whyMe: [
+            "Real enterprise and fintech experience",
+            "Clear updates at every step",
+            "On-time delivery and post-delivery support",
+        ],
+        packages: [
+            {
+                name: "Starter Web App",
+                price: 100,
+                deliveryDays: 3,
+                revisions: 3,
+                summary: "A custom web app with a database and user login.",
+                includes: ["Database", "User login", "3 pages", "Mobile responsive"],
+            },
+            {
+                name: "Business Web App",
+                price: 250,
+                deliveryDays: 7,
+                revisions: 5,
+                summary: "A business web app with an admin panel and user roles.",
+                includes: ["Database", "Admin panel", "User roles", "Up to 6 pages", "Hosting setup"],
+            },
+            {
+                name: "Full Custom System",
+                price: 450,
+                deliveryDays: 14,
+                revisions: 8,
+                summary: "A complete custom system, taken all the way to deployment.",
+                includes: ["Database", "Admin panel", "Payments", "Deployment", "Hosting setup"],
+            },
+        ],
+        packageNote: "One page is one screen, such as a login, a dashboard, or a list. Prices are as listed on Fiverr; the gig page has the current offer.",
+        faqs: [
+            {
+                question: "I'm not technical. Can you still help?",
+                answer: "Yes. Describe your idea in plain words and I'll handle the technical side.",
+            },
+            {
+                question: "Do I get the source code?",
+                answer: "Yes, the full source code with every delivery.",
+            },
+            {
+                question: "Can you work with my existing database or design?",
+                answer: "Yes. Share them and I'll build on top of them.",
+            },
+            {
+                question: "Do you set up hosting?",
+                answer: "Yes, hosting setup is included in the Business and Full Custom System packages.",
+            },
+            {
+                question: "Do you offer support after delivery?",
+                answer: "Yes, I fix any bugs in my work after delivery.",
+            },
+        ],
         relatedProjects: ["servora", "velora", "expense-tracker", "qalby"],
     },
 ];
