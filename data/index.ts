@@ -523,12 +523,28 @@ export interface GigPackage {
     includes: string[];
 }
 
+export interface GigImage {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+}
+
+export interface GigSample extends GigImage {
+    label: string;
+    caption: string;
+    /** Case-study page this sample belongs to. */
+    projectSlug: string;
+}
+
 export interface Gig {
     id: number;
     platform: string;
     title: string;
     tagline: string;
     stack: string;
+    thumbnail: GigImage;
+    samples: GigSample[];
     /** Canonical gig URL, without share-link tracking parameters. */
     url: string;
     deliverables: string[];
@@ -548,6 +564,41 @@ export const gigs: Gig[] = [
         title: "Turn your app idea into a working system with database",
         tagline: "I turn your idea into a working web system: a secure database, user logins, an admin panel and a fast, mobile-friendly interface, ready to launch.",
         stack: "ASP.NET Core, SQL Server, Next.js and TypeScript",
+        thumbnail: {
+            src: "/assets/gig/thumbnail.webp",
+            alt: "Gig banner reading: have an app idea or a business that needs a website or software? Built with C#, ASP.NET Core, SQL Server, Next.js and TypeScript, shown with an online store on desktop, tablet, and phone.",
+            width: 1600,
+            height: 900,
+        },
+        samples: [
+            {
+                src: "/assets/gig/work-01-velora.webp",
+                alt: "Online store sample showing a product listing with filters, a shopping cart, and an analytics dashboard.",
+                width: 1600,
+                height: 1078,
+                label: "WORK-01",
+                caption: "Online store with an admin analytics dashboard",
+                projectSlug: "velora",
+            },
+            {
+                src: "/assets/gig/work-02-servora.webp",
+                alt: "Restaurant management sample showing menu management, a printable bill, and an orders board.",
+                width: 1600,
+                height: 901,
+                label: "WORK-02",
+                caption: "Restaurant management: menu, orders, and receipts",
+                projectSlug: "servora",
+            },
+            {
+                src: "/assets/gig/work-03-fragframe.webp",
+                alt: "Gaming and community website sample showing a video editor's portfolio on desktop and mobile.",
+                width: 1536,
+                height: 1024,
+                label: "WORK-03",
+                caption: "Portfolio site for a gameplay video editor",
+                projectSlug: "fragframe",
+            },
+        ],
         url: "https://www.fiverr.com/asifuddin_ahmed/turn-your-app-idea-into-a-working-system-with-database",
         deliverables: [
             "Custom web app built from scratch, no templates",

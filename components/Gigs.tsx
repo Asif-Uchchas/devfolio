@@ -33,21 +33,35 @@ const GigCard = ({ gig }: { gig: Gig }) => {
         duration={Math.floor(Math.random() * 10000) + 10000}
         className="flex-col items-start text-left p-5 md:p-8 lg:p-10 gap-7"
       >
-        <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-semibold text-emerald-300">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-          Available on {gig.platform}
-        </span>
-
-        <div className="space-y-3">
-          <h4 className="text-xl md:text-2xl lg:text-3xl font-extrabold">
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              {gig.title}
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center w-full">
+          <div className="space-y-5">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-semibold text-emerald-300">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Available on {gig.platform}
             </span>
-          </h4>
-          <p className="text-white/80 text-base md:text-lg max-w-3xl">{gig.tagline}</p>
-          <p className="text-white/50 text-sm">
-            Built with <span className="text-white/70 font-medium">{gig.stack}</span>
-          </p>
+
+            <div className="space-y-3">
+              <h4 className="text-xl md:text-2xl lg:text-3xl font-extrabold">
+                <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+                  {gig.title}
+                </span>
+              </h4>
+              <p className="text-white/80 text-base md:text-lg">{gig.tagline}</p>
+              <p className="text-white/50 text-sm">
+                Built with <span className="text-white/70 font-medium">{gig.stack}</span>
+              </p>
+            </div>
+          </div>
+
+          <img
+            src={gig.thumbnail.src}
+            alt={gig.thumbnail.alt}
+            width={gig.thumbnail.width}
+            height={gig.thumbnail.height}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-auto rounded-2xl border border-white/10 shadow-2xl shadow-violet-500/10"
+          />
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 w-full">
@@ -84,6 +98,38 @@ const GigCard = ({ gig }: { gig: Gig }) => {
           </div>
         )}
       </Sparkle>
+
+      <div>
+        <Label>Sample work</Label>
+        <div className="grid gap-4 lg:gap-6 md:grid-cols-3">
+          {gig.samples.map((sample) => (
+            <Link
+              key={sample.src}
+              href={`/projects/${sample.projectSlug}`}
+              className="group flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-violet-500/30 hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+            >
+              <div className="aspect-[3/2] bg-[#050816]">
+                <img
+                  src={sample.src}
+                  alt={sample.alt}
+                  width={sample.width}
+                  height={sample.height}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <div className="p-5 space-y-1">
+                <p className="text-xs font-semibold tracking-widest text-violet-300">{sample.label}</p>
+                <p className="text-sm text-white/75">{sample.caption}</p>
+                <p className="pt-1 text-sm font-semibold text-violet-300 transition-colors group-hover:text-violet-200">
+                  View case study →
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
 
       <div>
         <Label>Packages</Label>
