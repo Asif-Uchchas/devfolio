@@ -1,6 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
+    { name: "Hire me", link: "#hire" },
     { name: "Experience", link: "#experience" },
     { name: "Contact", link: "#contact" },
 ];
@@ -511,6 +512,30 @@ export const projects: Project[] = [
 export const getProjectBySlug = (slug: string) =>
     projects.find((project) => project.slug === slug);
 
+export interface Gig {
+    id: number;
+    platform: string;
+    title: string;
+    headline: string;
+    summary: string;
+    /** Canonical gig URL, without share-link tracking parameters. */
+    url: string;
+    /** Slugs of projects that show the kind of work this gig covers. */
+    relatedProjects: string[];
+}
+
+export const gigs: Gig[] = [
+    {
+        id: 1,
+        platform: "Fiverr",
+        title: "Turn your app idea into a working system with database",
+        headline: "Got an app idea? Let's turn it into a working system.",
+        summary: "Tell me what you want to build and I'll take it from idea to a working, database-backed application — the same end-to-end work as the systems below.",
+        url: "https://www.fiverr.com/asifuddin_ahmed/turn-your-app-idea-into-a-working-system-with-database",
+        relatedProjects: ["servora", "velora", "expense-tracker", "qalby"],
+    },
+];
+
 export const workExperience = [
     {
         id: 1,
@@ -604,6 +629,12 @@ export const socialMedia: SocialLink[] = [
         name: "Threads",
         img: "/assets/threads.svg",
         link: "https://www.threads.com/@asif_uchchas",
+    },
+    {
+        id: 9,
+        name: "Fiverr",
+        img: "/assets/fiverr.svg",
+        link: "https://www.fiverr.com/asifuddin_ahmed",
     },
 ];
 

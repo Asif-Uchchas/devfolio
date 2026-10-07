@@ -5,6 +5,7 @@ import FloatingBar from "@/components/ui/FloatingBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Gigs from "@/components/Gigs";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -39,6 +40,7 @@ const Home = () => {
           <Hero />
           <About />
           <Projects />
+          <Gigs />
           <Experience />
           <Contact />
         </div>
